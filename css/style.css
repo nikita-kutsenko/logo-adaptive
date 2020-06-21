@@ -38,12 +38,13 @@ body {
 
 .header-helper-logo {
   display: flex;
-  justify-content: center; }
-  .header-helper-logo-link svg {
-    padding: 80px 0 0;
-    margin-bottom: 80px; }
-  .header-helper-logo-link:hover svg path {
-    fill: #a2a2a2; }
+  justify-content: center;
+  padding: 80px 0 0;
+  margin-bottom: 80px; }
+  .header-helper-logo-link {
+    max-height: 60px; }
+    .header-helper-logo-link:hover svg path {
+      fill: #a2a2a2; }
 
 .header-helper-nav-list {
   display: flex;
@@ -111,7 +112,7 @@ body {
   /*dots*/ }
   .slider ul {
     display: flex;
-    padding: 40px 0 0;
+    padding: 29px 0 0;
     margin: 0;
     align-items: center;
     justify-content: center; }
@@ -152,7 +153,7 @@ body {
 .main-historyTitle {
   display: flex;
   justify-content: center;
-  padding: 16px 0;
+  padding: 16px 0 14px;
   margin-bottom: 60px;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000; }
@@ -167,7 +168,7 @@ body {
 .main-historyBoxs {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px; }
+  margin-bottom: 59px; }
   .main-historyBoxs-helper {
     box-sizing: border-box; }
     .main-historyBoxs-helper-box {
@@ -193,7 +194,7 @@ body {
 .main-contactTitle {
   display: flex;
   justify-content: center;
-  padding: 16px 0;
+  padding: 16px 0 14px;
   margin-bottom: 47px;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000; }
@@ -264,11 +265,14 @@ body {
     .header-helper-nav-list-item-link:hover {
       padding: 0 0 5px;
       border-bottom: 1px solid #ffffff; }
-  .header-helper-logo-link svg {
-    width: 80px;
-    height: 48px;
+  .header-helper-logo {
     padding: 48px 0 0;
     margin-bottom: 96px; }
+    .header-helper-logo-link {
+      max-height: 48px; }
+      .header-helper-logo-link svg {
+        width: 80px;
+        height: 48px; }
   .slider {
     padding-bottom: 50px; }
   .main-textBlock-text {
@@ -324,12 +328,12 @@ body {
       .active-header .header-helper-burger:hover .header-helper-burger-lines,
       .active-header .header-helper-burger:hover .header-helper-burger-lines:before {
         background: #8b8b8b; }
-    .active-header .header-helper-logo-link svg {
+    .active-header .header-helper-logo {
       margin-bottom: 124px; }
       .active-header .header-helper-logo-link svg path {
         fill: #fff; }
-    .active-header .header-helper-logo-link:hover svg path {
-      fill: #a2a2a2; }
+      .active-header .header-helper-logo-link:hover svg path {
+        fill: #a2a2a2; }
     .active-header .header-helper-nav {
       display: block; }
       .active-header .header-helper-nav-list {
@@ -369,8 +373,19 @@ body {
       display: none; }
   .slider {
     padding-bottom: 24px; }
+    .slider ul li {
+      position: relative;
+      padding: 0 4px;
+      margin: 0 4px;
+      height: 8px; }
+      .slider ul li button {
+        position: absolute;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        padding: 0; }
   .slick-slide {
-    margin: 0 0 24px; }
+    margin: 0 0 19px; }
   ul.slick-dots {
     padding: 0; }
   .main-textBlock-text {
@@ -378,7 +393,8 @@ body {
     font-size: 16px;
     line-height: 20px; }
   .main-historyTitle {
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    padding: 16px 0 15px; }
     .main-historyTitle-text {
       font-size: 20px;
       line-height: 24px; }
@@ -391,14 +407,16 @@ body {
       line-height: 20px;
       color: #FFFFFF; }
     .main-historyBoxs-helper-box-year {
-      font-size: 24px; }
+      font-size: 24px;
+      line-height: 29px; }
     .main-historyBoxs-helper-left, .main-historyBoxs-helper-right {
       width: auto;
       height: auto;
       padding: 20px;
       margin-bottom: 24px; }
   .main-contactTitle {
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    padding: 16px 0 15px; }
     .main-contactTitle-text {
       font-size: 20px;
       line-height: 24px; }
@@ -412,7 +430,7 @@ body {
       .main-contact-form-textarea {
         border: 1px solid #000;
         margin-bottom: 19px;
-        padding: 20px; }
+        padding: 19px 20px; }
         .main-contact-form-textarea-helper {
           width: calc(100vw - 82px);
           height: 105px;
@@ -420,7 +438,7 @@ body {
           padding: 0; }
       .main-contact-form-btsend {
         font-size: 24px;
-        line-height: 29px;
+        line-height: 28px;
         padding: 16px 0;
         width: 100%; }
         .main-contact-form-btsend:hover {
@@ -457,10 +475,9 @@ body {
     .active-header .header-helper-logo {
       display: flex;
       justify-content: flex-end;
+      padding: 24px 0 0;
       margin-bottom: 48px; }
       .active-header .header-helper-logo-link svg {
-        padding: 24px 0 0;
-        margin: 0;
         width: 80px;
         height: 48px; }
         .active-header .header-helper-logo-link svg path {

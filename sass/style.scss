@@ -116,12 +116,18 @@ body {
         &-logo {
             display: flex;
             justify-content: center;
+
+            padding: 80px 0 0;
+            margin-bottom: 80px;
             
             &-link {
+                // test style start 
+                max-height: 60px;
+                // test style end
 
                 svg {
-                    padding: 80px 0 0;
-                    margin-bottom: 80px;
+                    // padding: 80px 0 0;
+                    // margin-bottom: 80px;
                 }
 
                 &:hover {
@@ -248,7 +254,12 @@ body {
     /*dots*/
     ul {
         display: flex;
-        padding: 40px 0 0;
+        // padding: 40px 0 0;
+
+        // test style start 
+        padding: 29px 0 0;
+        // test style end
+
         margin: 0;
         
         align-items: center;
@@ -318,7 +329,7 @@ body {
     &-historyTitle {
         display: flex;
         justify-content: center;
-        padding: 16px 0;
+        padding: 16px 0 14px;
         margin-bottom: 60px;
         border-top: 1px solid #000000;
         border-bottom: 1px solid #000000;
@@ -338,7 +349,7 @@ body {
     &-historyBoxs {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 60px;
+        margin-bottom: 59px;
 
         &-helper {
             box-sizing: border-box;
@@ -381,7 +392,7 @@ body {
         display: flex;
         justify-content: center;
 
-        padding: 16px 0;
+        padding: 16px 0 14px;
         margin-bottom: 47px;
 
         border-top: 1px solid #000;
@@ -514,15 +525,18 @@ body {
                 }
 
                 &-logo {
+                    padding: 48px 0 0;
+                    margin-bottom: 96px;
 
                     &-link {
+                        max-height: 48px;
 
                         svg {
                             width: 80px;
                             height: 48px;
 
-                            padding: 48px 0 0;
-                            margin-bottom: 96px;
+                            // padding: 48px 0 0;
+                            // margin-bottom: 96px;
                         }
                     }
                 }
@@ -654,11 +668,12 @@ body {
                     }
 
                     &-logo {
+                        margin-bottom: 124px;
 
                         &-link {
 
                             svg {
-                                margin-bottom: 124px;
+                                // margin-bottom: 124px;
 
                                 path {
                                     fill: #fff;
@@ -761,9 +776,31 @@ body {
 
         .slider {
             padding-bottom: 24px;
+
+            ul {
+
+                li {
+                    position: relative;
+                    padding: 0 4px;
+                    margin: 0 4px;
+
+                    height: 8px;
+
+                    button {
+                        position: absolute;
+
+                        left: 0;
+                        width: 8px;
+                        
+                        height: 8px;
+                        padding: 0;
+                    }
+                }  
+            }
+            
         }
         .slick-slide {
-            margin: 0 0 24px;
+            margin: 0 0 19px;
         }
         ul.slick-dots {
             padding: 0;
@@ -785,6 +822,7 @@ body {
 
             &-historyTitle {
                 margin-bottom: 24px;
+                padding: 16px 0 15px;
 
                 &-text {
                     font-size: 20px;
@@ -811,6 +849,7 @@ body {
 
                         &-year {
                             font-size: 24px;
+                            line-height: 29px;
                         }
                     }
 
@@ -826,6 +865,7 @@ body {
 
             &-contactTitle {
                 margin-bottom: 24px;
+                padding: 16px 0 15px;
 
                 &-text {
                     font-size: 20px;
@@ -845,7 +885,7 @@ body {
                     &-textarea {
                         border: 1px solid #000;
                         margin-bottom: 19px;
-                        padding: 20px;
+                        padding: 19px 20px;
                         
                         &-helper {
                             // padding: 20px;
@@ -858,7 +898,7 @@ body {
 
                     &-btsend {
                         font-size: 24px;
-                        line-height: 29px;
+                        line-height: 28px;
                         padding: 16px 0;
                         width: 100%;
 
@@ -931,13 +971,14 @@ body {
                     &-logo {
                         display: flex;
                         justify-content: flex-end;
+                        padding: 24px 0 0;
                         margin-bottom: 48px;
 
                         &-link {
 
                             svg {
-                                padding: 24px 0 0;
-                                margin: 0;
+                                // padding: 24px 0 0;
+                                // margin: 0;
 
                                 width: 80px;
                                 height: 48px;
